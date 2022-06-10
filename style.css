@@ -1,0 +1,370 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+ }
+ .logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px e;
+    }
+ .menu-icon{
+     width: 25p
+
+    }
+    nav{
+        flex: 100%;
+        text-align: center;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    nav ul li a{
+    text-decoration: none;
+    color: rgb(233, 77, 77);
+    font-size: 14px;
+    }
+    nav ul li a:hover{
+        color: rgb(0, 0, 0);
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px 0;
+        background-color: #ebb4c3;
+    }
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    font-size: 54px;
+}
+.col-1 h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font-size: 16px;
+    color: #707070;
+    
+}
+
+.col-1 h4{
+    margin: 30px 0;
+    font-size: 20px;
+}
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button img{
+    width: 30px;
+    display: none;
+}
+button:hover img{
+    display: block;
+}
+button:hover{
+width: 160px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(#ff469f, #ff6062);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+ .col-2 .controller{
+     width: 100%;
+}
+
+
+
+.social-links img{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    border: 1px solid #16c9ff;
+    margin: 40px 5px 0;
+    color: #16c9ff;
+    cursor: pointer;
+    transition: .5s;
+}
+.social-links img:hover{
+  background: #009688;
+  color: #fff;
+  transform: translateY(-7px);
+}
+.social-links p{
+font-size: 12px;
+margin-top: 20px;
+}
+.social-links{
+    text-align: center;
+}
+
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+    max-width: 70rem;
+    margin: auto;
+  }
+  
+  .about .container {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  .about-img img {
+    height: 12rem;
+    width: auto;
+    border-radius: 50%;
+    margin: 2rem;
+    box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);
+  }
+  
+  .about-text-box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+  }
+  
+  .about-text-box h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-text-box p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    padding: 0;
+    margin-bottom: 1.45rem;
+    color: rgb(160, 77, 77);
+  }
+  
+  hr {
+    margin: 4rem 0;
+    background: linear-gradient(
+      to right,
+      rgba(249, 105, 14, 1) 0%,
+      rgba(102, 51, 153, 1) 100%
+    );
+    border: 0;
+    height: 1px;
+  }
+  
+
+  .project h1{
+      text-align: absolute;
+      position:relative;
+  }
+  .columns {
+    float: left;
+    width: 23%;
+    padding: 10px;
+    
+  }
+  
+  /* Style the images inside the grid */
+  .columns img {
+    opacity: 0.8; 
+    cursor: pointer; 
+    
+  }
+  
+  .columns img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .containers {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: rgb(161, 63, 63);
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: rgb(184, 88, 88);
+    font-size: 35px;
+    cursor: pointer;
+  }
+  
+
+.contacts h1{
+    text-align: center;
+   
+}
+
+
+  contacts {font-family: Arial, Helvetica, sans-serif;}
+  contacts {box-sizing: border-box;}
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(233, 77, 77);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .containerss {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+@media  only screen and (max-width:700px) {
+
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#ff54a2, #ff575a);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.9s;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .controller{
+        width: 77%
+    }
+    .color-box{
+           transform: translateX(75px);
+    }
+ 
+    
+}
+.col-1{
+    flex-basis: 100%;
+}
+.col-1 h2{
+    font-size: 35px;
+}
+.col-1 h3{
+    font-size: 15px;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0,0,0,0,5) ,#017bee);
+  opacity: 0;
+  transition: 3s;
+}
+.project:hover .overlay{
+  opacity: 1;
+}
+.footer-left{
+  text-align: right;
+  flex-basis: 45%;
+  padding: 10px;
+  margin-bottom: 20px;
+  line-height: 35px;
+}

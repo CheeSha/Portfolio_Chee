@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width%-device-width, initial-scale=1.0">
+    <title>Sharyll Kaye Chee - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+      <div class="navbar">
+          <img src="images/logo.png" class="logo">
+          <nav>
+              <ul id="menuList">
+                   <li><a href="#about"class="scroll-to">About Me</a></li>   
+                   <li><a href="#profile">My Profile </a></li>
+                   <li><a href="#projectss">My Projects </a></li>
+                   <li><a href="#contacts">Contacts</a></li>
+        
+              </ul>
+          </nav>
+          <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+      </div>
+
+      <div id="#profile" class="row">
+          <div class="col-1">
+               <h2>Hi I'm<br>Sharyll Chee</h2>
+               <h3>Bachelor of Science In Information Technology</h3>
+               <p>(I'm 21 years old)</p>
+               <h4>STI College Global City</h4>
+               <button type="button" onclick="document.location='Chee_resume.pdf'" >My Resume<img src="images/arrow.png"> </button>
+            
+            </div>  
+          <div class="col-2">
+              <img src="images/che.png.jpg" class="controller">
+           
+      </div>
+  </div>
+ 
+
+<!-- About me -->
+
+  <section id="about" class="about">
+    <div class="container">
+
+      <div id="#about" class="about-text-box">
+        <h2>Hello More About Me</h2>
+        <p>
+         <i>   Hi I am Sharyll Kaye Chee a passionate 3rd year college student studying Bachelor of Science
+           in Information Technology at STI Global City. While studying I'm currently working as an scholar 
+           in PathDAO community and it was steady source of income and  motivation that drives me to do my best.
+            In this community it led me to challenge myself daily and learn new skills that helped 
+             me to do better work. </i>
+        </p>
+        <p>
+          <i>I thrive on working the mission and challenges that constantly set a goal to achieve for myself
+                and I’m always looking for a better opportunity to do better and achieve more learnings.  </i>
+        <p>
+            I am organized. I always take notes, and I 
+            use a series of tools to help myself stay on top of 
+            deadlines. I like to keep a clean workspace and create 
+            a logical filing method so I’m always able to find what I need. 
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="projectss" class="projectss">
+    
+    <h1> Certificate & Projects</h1>
+      
+      <div class="row">
+        <div id="#projectss" class="columns">
+          <img src="images/7.png" alt="SAP" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="columns">
+            <img src="images/8.png" alt="DATA PRIVACY" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="columns">
+          <img src="images/3.png" alt="Task Performance" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="columns">
+            <img src="images/4.png" alt="Exam Project" style="width:100%" onclick="myFunction(this);">
+          </div>
+        <div class="columns">
+            <img src="images/5.png" alt="Task Performance" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="columns">
+            <img src="images/6.png" alt="Task Performance" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="columns">
+          <img src="images/2.png" alt="Task Performance" style="width:100%" onclick="myFunction(this);">
+      </div>
+      </div>
+
+  </section>    
+
+  <div class="containers">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+
+<br><br><br><br><br><br>
+  <!-- contact -->
+  <section id="contacts" class="contacts">
+    <h1>Contact Form</h1>
+
+    <div id="#contacts" class="containerss">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Taguig City</option>
+          <option value="canada">Pasig City</option>
+          <option value="usa">Makati City</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+  </section>
+<div class="social-links">
+    <img src="images/fb.png">
+    <img src="images/tw.png">
+    <img src="images/ig.png">
+    <p> Social Media </p>
+
+</div>
+
+</div>
+
+<script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+    </script>
+
+
+<script>
+
+    var menuList = document.getElementById("menuList");
+
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu() {
+
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "130px";
+        }
+        else
+        {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+
+    </script>
+<!--Footer-->
+<section id="footer">
+    <div class="footer-left">
+      <h1>Get In Touch</h1>
+      <p> Mt. Isarog Street Makati City</p>
+      <p> cheesharyll@gmail.com</p>
+      <p> +639755213455  </p>
+    </div>
+  </section>
+</body>
+</html>
